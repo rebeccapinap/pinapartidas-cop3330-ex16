@@ -19,13 +19,8 @@ public class App
         System.out.print("What is your age? ");
         int age = input.nextInt();
 
-        if (age >= legalAge)
-        {
-            System.out.println("You are old enough to legally drive.");
-        }
-        else
-        {
-            System.out.println("You are not old enough to legally drive.");
-        }
+        String str = age >= 16 ? "You are old enough to legally drive." : "You are not old enough to legally drive.";
+
+        System.out.print(str);
     }
 }
